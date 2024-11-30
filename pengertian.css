@@ -1,0 +1,96 @@
+.header{
+    width: 1280px;
+    height: auto;
+    position: fixed;
+}
+/* Kode css navigator */
+ul{
+    list-style: none;
+    background-color: rgb(6, 35, 132);
+    padding: 0px 0px;
+    margin: 30px 0px;
+    position: absolute;
+    width: 1280px;
+    height: 60px;
+}
+li{
+    float: left;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    padding: 10px 8px;
+}
+ul li a{
+    padding: 5px;
+    text-align: center;
+}
+ul a:hover{
+    background-color: rgb(236, 83, 176);
+}
+/* Kode css dropdown */
+ul li ul.dropdown{
+    background: rgb(77, 45, 183);
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 5px 5px;
+    padding: 0px;
+    z-index: 9999; /* set a higher z-index value */
+
+}
+ul li:hover ul.dropdown{
+    display: block;
+    z-index: 9999; /* set a higher z-index value */
+
+}
+/* kode css side bar */
+.column{
+    position: left fixed;
+    padding: 0px 0px;
+}
+/* left column */
+.column.side{
+    margin: 160px 10px;
+    flex: 1%;
+    height: auto;
+    width: 20%;
+    padding: 10px 15px;
+    position:auto left;
+    background-color: rgb(53, 114, 239);
+    text-decoration-color: white;
+}
+/* kode css middle bar */
+.column.middle{
+    margin: 170px 0px;
+    padding: 10px 15px;
+    width: 80%;
+    height:auto;
+    background-color: rgb(255, 255, 255);   
+    opacity:60%;
+    text-align: center;
+    float:right;
+}
+
+.row{
+    display: flex;
+  }
+.topnav:hover{
+    float: right;
+}
+body{
+    background-image: url(gif\ bg.gif);
+    background-size:cover;
+    
+}
+/* kode css footer */
+.footer{
+    width: 1280px;
+    position: fixed;
+    margin: 540px 0px;
+}
+h1{
+    float: left;
+}
